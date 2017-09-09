@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg"
+    tools:context="android.aitlindia.com.longlat.MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/lblLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/marker"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="154dp"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+       />
+
+    <TextView
+        android:id="@+id/lblLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="some dummy location of the LAt_LON"
+        tools:layout_editor_absoluteY="46dp"
+        tools:layout_editor_absoluteX="49dp"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/btnStartTracking"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnStopTracking"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/btn_stop_service_tracking"
+        android:textColor="@color/white"
+        android:layout_marginBottom="136dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnStartTracking"
+        android:layout_alignStart="@+id/btnStartTracking" />
+
+    <Button
+        android:id="@+id/btnStartTracking"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/btn_get_location"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/btnStopTracking"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LongLat</string>
+    <string name="welcome">GET YOUR LOCATION</string>
+    <string name="btn_get_location">START TRACKING</string>
+    <string name="btn_stop_service_tracking">STOP TRACKING </string>
+    <string name="text_start_tracking_service">Tracking Service is started!! </string>
+    <string name="text_stop_tracking_service">Tracking Service is stop!! </string>
+
+
+</resources>
